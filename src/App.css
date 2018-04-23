@@ -1,0 +1,91 @@
+.Font{
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+/* For any span which requires Bold */
+.Bold{
+    font-weight: 700;
+}
+
+/* Any Button that requires this color */
+.ButtonStyle:hover {
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+/* For Navigation Bar Text */
+.StyleNavBarButton{
+    color: rgb(210, 210, 210);
+}
+
+.StyleNavBarButton:hover{
+    color: whitesmoke;
+}
+
+/* For Navigation Bar Icons */
+.ClickableLinks{
+    color: rgb(210, 210, 210);
+}
+
+.ClickableLinks:hover{
+    color: whitesmoke;
+}
+
+/* For the content bodies in relations to the width of viewing screen*/
+@media (max-width: 1023px){
+    .BodyContent{
+        /* A style implemented for all body content components */
+        background-color: white;
+        height: calc(100% - 300px);
+        position: relative;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        color: #444;
+    }
+
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* Note: Apply .FilledContent in components only when necessary to fill in empty spaced. The default will only be set in the AboutMe and Contact components */
+    /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .FilledContent{
+        /* Applied in Contact and About me to make height of content fill the space*/
+        height: calc(100vh - 380px)
+    }
+}
+
+@media (min-width: 1024px){
+    
+    .BodyContent{
+        /* A style implemented for all body content components */
+        margin-left: 20%;
+        padding-top: 4%;
+        padding-left: 1%;
+        width:55%;
+        background-color: white;
+        z-index: 3;
+        height: 100%;
+        color: #444;
+        
+    }
+
+    .FilledContent{
+        /* Applied in Contact and About me to make height of content fill the space*/
+        height: 100vh;
+    }
+    
+    .LeftFiller{
+        /* A style to block out the photo background. */
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        background-color:rgb(255, 255, 245);
+    }
+}
+
+.Testsub{
+    height: 100%;
+    width: 100%;
+    background-color:red;
+}
