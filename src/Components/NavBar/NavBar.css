@@ -13,6 +13,10 @@
     filter: grayscale(1);
 }
 
+.ActiveStyleNavBarButton{
+    color:red;
+}
+
 .NarBarStyle{
     background-color: rgba(13,13,145,.8);
     color: whitesmoke;

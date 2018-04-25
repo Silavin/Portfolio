@@ -1,5 +1,6 @@
 .Font{
     font-family: 'Lato', 'Roboto', sans-serif;
+    
 }
 
 /* For any span which requires Bold */
@@ -43,14 +44,16 @@
         color: #444;
     }
 
-    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-    /* Note: Apply .FilledContent in components only when necessary to fill in empty spaced. The default will only be set in the AboutMe and Contact components */
-    /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .FilledContent{
-        /* Applied in Contact and About me to make height of content fill the space*/
-        height: calc(100vh - 380px)
+    .ContentFiller{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 430px;
+        bottom: 0;
+        background-color:white;
+        z-index: -1;
     }
+
 }
 
 @media (min-width: 1024px){
@@ -60,17 +63,13 @@
         margin-left: 20%;
         padding-top: 4%;
         padding-left: 1%;
+        padding-right: 3%;
         width:55%;
         background-color: white;
         z-index: 3;
         height: 100%;
         color: #444;
         
-    }
-
-    .FilledContent{
-        /* Applied in Contact and About me to make height of content fill the space*/
-        height: 100vh;
     }
     
     .LeftFiller{
@@ -82,6 +81,16 @@
         width: 20%;
         background-color:rgb(255, 255, 245);
     }
+
+    .ContentFiller{
+        position: fixed;
+        left: 20%;
+        top: 0;
+        bottom: 0;
+        width: 55%;
+        background-color:white;
+        z-index: -1;
+    }
 }
 
 .Testsub{
@@ -89,3 +98,4 @@
     width: 100%;
     background-color:red;
 }
+

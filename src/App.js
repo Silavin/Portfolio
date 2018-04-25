@@ -5,7 +5,7 @@ import Contact from './Components/Contact';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import Portfolio from './Components/Portfolio';
-import PortfolioContent from './Components/Portfolio/PortfolioContent';
+import PortfolioContent from './Components/PortfolioContent';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
@@ -17,7 +17,7 @@ class App extends Component {
       {
         key: "3",
         date: "Current",
-        title: "I am busy until the start of 2019, but from then on, I will be looking for anothter interesting pursuit.",
+        title: "I am busy until the start of 2019, but from then on, I will be looking for another interesting pursuit.",
         decription: "If you are looking for a front-end developer for a project, you can try contacting me. I will reply within 2 working days.",
         button: ["REACT","REDUX"],
       },
@@ -56,9 +56,20 @@ class App extends Component {
             <Route exact path="/Portfolio" render={(props) => (
               <Portfolio data={portfolioContentArray} />
             )} />
-            <Route path="/Post/:id" render={(props) => (
-              <PortfolioContent data={portfolioContentArray} />
-            )} />
+            {/* Below is for each portfolio post of content*/}
+            {portfolioContentArray.map(
+              (path, index) => {
+                return (
+                  <Route 
+                  path={'/Post/' + path.title.replace(/\s+/g, '-').toLowerCase()} 
+                  key={index} 
+                  render={(props) => (
+                    <PortfolioContent data={path} />
+                  )} />
+                )
+              }
+            )}
+            {/* This is only for unfound urls. */}
             <Route component={NoMatch} />
           </Switch>
         </BrowserRouter>

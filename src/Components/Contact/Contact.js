@@ -10,51 +10,50 @@ class Contact extends Component {
       <div>
         <NavBar />
         <div className="LeftFiller"></div>
+        <div className="ContentFiller"></div>
         <div className="BodyContent">
-          <div className="FilledContent">
-            <h1 id="ContactMe">CONTACT ME</h1>
-            <p id="ContactMeText">I am available for chats and question. If there are any job specifications, I can only do them in my spare time.</p>
-            <div className="DeclareGridForContact">
-              {/* <div className="ContactTagFont"> */}
-                <div>
-                  <p className="ContactEmail">E-mail:</p>
-                </div>
-                <div className="ContactLinkedin">
-                  <p>LinkedIn:</p>
-                </div>
-                <div className="ContactGithub">
-                  <p>Github:</p>
-                </div>
-                <div className="ContactFacebook">
-                  <p>Facebook:</p>
-                </div>
-                <div className="ContactTwitter">
-                  <p>Twitter:</p>
-                </div>
-              {/* </div> */}
-              {/* <div className="ContactMeLinks"> */}
-                <div className="GridContactIconMail">
-                  <Icon name='mail' size='large'/>
-                  <span>silverdolfin101@gmail.com</span>
-                </div>
-                <div className="GridContactIconLinkedin">
-                  <Icon name='linkedin square' size='large'/>
-                  <span></span>
-                </div>
-                <div className="GridContactIconGithub">
-                  <Icon name='github square' size='large'/>
-                  <span>test</span>
-                </div>
-                <div className="GridContactIconFacebook">
-                  <Icon name='facebook square' size='large'/>
-                  <span>test</span>
-                </div>
-                <div className="GridContactIconTwitter">
-                  <Icon name='twitter square' size='large'/>
-                  <span>test</span>
-                </div>
-              {/* </div> */}
-            </div>
+          <h1 id="ContactMe">CONTACT ME</h1>
+          <p id="ContactMeText">I am available for chats and question. If there are any job specifications, I can only do them in my spare time.</p>
+          <div className="DeclareGridForContact">
+            {/* <div className="ContactTagFont"> */}
+              <div>
+                <p className="ContactEmail">E-mail:</p>
+              </div>
+              <div className="ContactLinkedin">
+                <p>LinkedIn:</p>
+              </div>
+              <div className="ContactGithub">
+                <p>Github:</p>
+              </div>
+              <div className="ContactFacebook">
+                <p>Facebook:</p>
+              </div>
+              <div className="ContactTwitter">
+                <p>Twitter:</p>
+              </div>
+            {/* </div> */}
+            {/* <div className="ContactMeLinks"> */}
+              <div className="GridContactIconMail">
+                <Icon name='mail' size='large'/>
+                <span>silverdolfin101@gmail.com</span>
+              </div>
+              <div className="GridContactIconLinkedin">
+                <Icon name='linkedin square' size='large'/>
+                <span></span>
+              </div>
+              <div className="GridContactIconGithub">
+                <Icon name='github square' size='large'/>
+                <span>test</span>
+              </div>
+              <div className="GridContactIconFacebook">
+                <Icon name='facebook square' size='large'/>
+                <span>test</span>
+              </div>
+              <div className="GridContactIconTwitter">
+                <Icon name='twitter square' size='large'/>
+                <span>test</span>
+              </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
