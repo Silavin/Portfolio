@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import ProfilePhoto from '../NavBar/Silavin.png';
 import 'semantic-ui-css/semantic.min.css';
@@ -35,19 +35,14 @@ class Home extends Component {
             <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-            <Nav>
-            <NavItem eventKey={1}>
+            <Nav className="NavTextAlign">
                 <Link to="/Skills" className="StyleNavBarButton">MY SKILLS</Link>    
-            </NavItem>
-            <NavItem eventKey={2}>
+
                 <Link to='/Portfolio' className="StyleNavBarButton">PORTFOLIO</Link>
-            </NavItem>
-            <NavItem eventKey={3}>
+
                 <Link to="/Contact" className="StyleNavBarButton">CONTACT</Link>
-            </NavItem>
-            <NavItem eventKey={4}>
+
                 <Link to="/AboutMe" className="StyleNavBarButton">ABOUT ME</Link>
-            </NavItem>
             </Nav>
         </Navbar.Collapse>
         </Navbar>

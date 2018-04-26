@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './NavBar.css';
-import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 import ProfilePhoto from './Silavin.png';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
   render() {
@@ -40,19 +40,16 @@ class NavBar extends Component {
             <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-            <Nav>
-            <NavItem eventKey={1} href="#">
-                <Link to="/Skills" className="StyleNavBarButton">MY SKILLS</Link>
-            </NavItem>
-            <NavItem eventKey={2} href="#">
-                <Link to="/Portfolio" className="StyleNavBarButton">PORTFOLIO</Link>
-            </NavItem>
-            <NavItem eventKey={3} href="#">
-                <Link to="/Contact" className="StyleNavBarButton">CONTACT</Link>
-            </NavItem>
-            <NavItem eventKey={4} href="#">
-                <Link to="/AboutMe" className="StyleNavBarButton">ABOUT ME</Link>
-            </NavItem>
+            <Nav className="NavTextAlign">
+
+                <NavLink to="/Skills" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">MY SKILLS</NavLink>
+
+                <NavLink to="/Portfolio" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">PORTFOLIO</NavLink>
+
+                <NavLink to="/Contact" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">CONTACT</NavLink>
+            
+                <NavLink to="/AboutMe" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">ABOUT ME</NavLink>
+
             </Nav>
         </Navbar.Collapse>
         </Navbar>
@@ -70,18 +67,18 @@ class NavBar extends Component {
                 </Link>
             </div>
                 <div className="DirectionalLinksSpacing">
-                    <Link to="/Skills" className="StyleNavBarButton">
+                    <NavLink to="/Skills" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className="DirectionalLinks">MY SKILLS</p>
-                    </Link>
-                    <Link to="/Portfolio" className="StyleNavBarButton">
+                    </NavLink>
+                    <NavLink to="/Portfolio" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className=" DirectionalLinks">PORTFOLIO</p>
-                    </Link>
-                    <Link to="/Contact" className="StyleNavBarButton">
+                    </NavLink>
+                    <NavLink to="/Contact" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className="DirectionalLinks">CONTACT</p>
-                    </Link>
-                    <Link to="/AboutMe" className="StyleNavBarButton">
+                    </NavLink>
+                    <NavLink to="/AboutMe" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className="DirectionalLinks">ABOUT ME</p>
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className="RightPanelFooter">                    
                     <p>GET IN TOUCH</p>    

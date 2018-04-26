@@ -8,8 +8,8 @@ class Skills extends Component {
       <div>
         <NavBar />    
         <div className="LeftFiller"></div>
-        <div className="BodyContent">
         <div className="ContentFiller"></div>
+        <div className="BodyContent">
           <h1 id="MySkillsHeader">MY SKILLS</h1>
           <p className="MySkillsText">  I am a <b>front-end developer</b> with experience of handling a few websites.</p>
           <p className="MySkillsText">I have maintained, developed and launched a few projects; most of which were well received by the community.</p>

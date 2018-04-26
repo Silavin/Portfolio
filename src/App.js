@@ -39,6 +39,19 @@ class App extends Component {
 
     ]
 
+    var buttonLinksArray =[
+      { 
+        key: "1",
+        type: "REACT",
+        url:  "https://reactjs.org/"
+      },
+      { 
+        key: "2",
+        type:"REDUX",
+        url: "https://redux.js.org/"
+      },
+    ]
+
     var NoMatch = ( { location } ) => (
       <div>
         <h2>Error 404. Page is not found. <code>{location.pathname}</code> is false. </h2>
