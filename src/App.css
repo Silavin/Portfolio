@@ -16,42 +16,37 @@
 
 /* For Navigation Bar Text */
 @media (max-width:767px){
-.StyleNavBarButton{
-    color: rgb(210, 210, 210);
-    display: block;
-    font-size: 14px;
-    padding: 7px;
-}
+    .StyleNavBarButton a{
+        color: rgb(210, 210, 210);
+        display: block;
+        font-size: 14px;
+        padding: 7px;
+    }
 }
 
 @media (min-width:768px) and (max-width:1023px){
-    .StyleNavBarButton{
+    #NavTextAlign .StyleNavBarButton a{
         color: rgb(210, 210, 210);
         display: inline-block;
         font-size: 15px;
-        padding: 15px 0px 12px 14px;
 
     }
 
-    .NavTextAlign{
-        float: none;
-        text-align: right;
-    }
 }
 
 @media (min-width:1024px){
-    .StyleNavBarButton{
+    .StyleNavBarButton a{
         color: rgb(210, 210, 210);
 
     }
 }
 
-.StyleNavBarButton:hover{
+.StyleNavBarButton:hover a{
     color: whitesmoke;
 
 }
 
-.ActiveStyleNavBarButton{
+.ActiveStyleNavBarButton a{
     color:white !important;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue !important;
     text-decoration: none !important;

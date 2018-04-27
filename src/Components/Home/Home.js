@@ -10,7 +10,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-
         <div className="BodyOfHome">
           <div className="GreetingBody">
             <p className="Greetings">Greetings, I'm Sebastian.</p>

@@ -25,21 +25,6 @@ class PortfolioContent extends Component {
 
   render() {
 
-    // var linkingOps = () => {
-    //   return this.props.link;
-    // };
-
-    // function buttonPathWay(){
-    //   // if(props.data.button === props.dataLinks.title){
-    //   //   return{
-    //   //   };
-    //   // }
-    //   return (
-    //     console.dir(dataLinking())
-    //   )
-    // }
-
-
     return (
       <div>
         <NavBar />
