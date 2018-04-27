@@ -19,7 +19,7 @@ class App extends Component {
         date: "Current",
         title: "I am busy until the start of 2019, but from then on, I will be looking for another interesting pursuit.",
         decription: "If you are looking for a front-end developer for a project, you can try contacting me. I will reply within 2 working days.",
-        button: ["REACT","REDUX"],
+        button: ["REACT","REDUX", "JIA RONG"],
       },
       {
         key: "2",
@@ -50,6 +50,11 @@ class App extends Component {
         type:"REDUX",
         url: "https://redux.js.org/"
       },
+      {
+        key: '3',
+        type: "JIA RONG",
+        url: "https://github.com/juniarz"
+      }
     ]
 
     var NoMatch = ( { location } ) => (
@@ -67,7 +72,7 @@ class App extends Component {
             <Route exact path="/AboutMe" component={AboutMe} />
             <Route exact path="/Skills" component={Skills} />
             <Route exact path="/Portfolio" render={(props) => (
-              <Portfolio data={portfolioContentArray} />
+              <Portfolio data={portfolioContentArray} dataLinks={buttonLinksArray}/>
             )} />
             {/* Below is for each portfolio post of content*/}
             {portfolioContentArray.map(
@@ -77,7 +82,7 @@ class App extends Component {
                   path={'/Post/' + path.title.replace(/\s+/g, '-').toLowerCase()} 
                   key={index} 
                   render={(props) => (
-                    <PortfolioContent data={path} />
+                    <PortfolioContent data={path} dataLinks={buttonLinksArray}/>
                   )} />
                 )
               }
