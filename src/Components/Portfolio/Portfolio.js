@@ -35,6 +35,7 @@ class Portfolio extends Component {
                                 }) 
                               );
                             })}
+                            <img src={content.pictures[0]} alt=" " style={{width:"100%", height:"auto", padding:"10px 0px 5vh 0px", }}/>
                             </TimelineEvent>
                         </div>
                     )
@@ -64,6 +65,7 @@ class Portfolio extends Component {
                                 }) 
                               );
                             })}
+                            <img src={content.pictures[0]} alt=" " style={{width:"100%", height:"auto", padding:"10px 0px 5vh 0px", }}/>
                         </div>
                     )
                 }      

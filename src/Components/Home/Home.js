@@ -28,8 +28,8 @@ class Home extends Component {
                     <Icon className="ClickableLinks" name='mail'/>
                     <Icon className="ClickableLinks" name='facebook square'/>
                     <Icon className="ClickableLinks" name='twitter square'/>
-                    <Icon className="ClickableLinks" name='github square'/>
-                    <Icon className="ClickableLinks" name='linkedin square'/>
+                    <a href="https://github.com/Silavin/"><Icon className="ClickableLinks" name='github square'/></a>
+                    <a href="https://www.linkedin.com/in/sebastian-sim-51486ba0/"><Icon className="ClickableLinks" name='linkedin square'/></a>
                 </div>
             </Navbar.Brand>
             <Navbar.Toggle />
@@ -81,8 +81,8 @@ class Home extends Component {
                     <Icon className="ClickableLinks" name='mail' size='big' />
                     <Icon className="ClickableLinks" name='facebook square' size='big' />
                     <Icon className="ClickableLinks" name='twitter square' size='big' />
-                    <Icon className="ClickableLinks" name='github square' size='big' />
-                    <Icon className="ClickableLinks" name='linkedin square' size='big' />
+                    <a href="https://github.com/Silavin/"><Icon className="ClickableLinks" name='github square' size='big' /></a>
+                    <a href="https://www.linkedin.com/in/sebastian-sim-51486ba0/"><Icon className="ClickableLinks" name='linkedin square' size='big' /></a>
                 </div>
         </div>
       </div>

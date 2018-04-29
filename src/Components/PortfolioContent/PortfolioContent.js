@@ -8,8 +8,8 @@ class PortfolioContent extends Component {
   constructor(props) {
     super(props);
 
-    // this.buttons = this.generateButton();
     this.buttons = this.generateButton()
+    this.Photos = this.generatePhotos()
   }
   
   generateButton = () => {
@@ -24,6 +24,15 @@ class PortfolioContent extends Component {
     );})
   );}
 
+  generatePhotos = () => {
+    return(
+      this.props.data.pictures.map((Photos)=>{
+        return(
+          <img src={Photos} alt="Nil" style={{width:"100%", height:"auto", padding:"10px 0px 10px 0px", }}/>
+        )
+      })
+    )
+  }
 
   render() {
 
@@ -40,6 +49,8 @@ class PortfolioContent extends Component {
                 <hr />
                 <h3>Technology utilised:</h3>
                 {this.buttons}
+                <p>{this.props.data.fullDescription}</p>
+                {this.Photos}
               </div>
             </div>
           </div>

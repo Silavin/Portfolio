@@ -38,20 +38,24 @@ class Contact extends Component {
                 <span>silverdolfin101@gmail.com</span>
               </div>
               <div className="GridContactIconLinkedin">
-                <Icon name='linkedin square' size='large'/>
-                <span></span>
+                <a href="https://www.linkedin.com/notifications/">
+                  <Icon name='linkedin square' size='large'/>
+                  <span>Sebastian Sim</span>
+                </a>
               </div>
               <div className="GridContactIconGithub">
-                <Icon name='github square' size='large'/>
-                <span>test</span>
+                <a href="https://github.com/Silavin/">
+                  <Icon name='github square' size='large'/>
+                  <span>Silavin</span>
+                </a>
               </div>
               <div className="GridContactIconFacebook">
                 <Icon name='facebook square' size='large'/>
-                <span>test</span>
+                <span> - </span>
               </div>
               <div className="GridContactIconTwitter">
                 <Icon name='twitter square' size='large'/>
-                <span>test</span>
+                <span> - </span>
               </div>
             {/* </div> */}
           </div>

@@ -40,56 +40,54 @@
 
 /* Right Side of Grid */
 
-.GridContactIconMail{
+.GridContactIconMail a{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    color: #444;
 }
 
-.GridContactIconLinkedin{
+.GridContactIconLinkedin a{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    color: #444;
 }
 
-.GridContactIconGithub{
+.GridContactIconGithub a{
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    color: #444;
 }
 
-.GridContactIconFacebook{
+.GridContactIconFacebook a{
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    color: #444;
 }
 
-.GridContactIconTwitter{
+.GridContactIconTwitter a{
 
     grid-column: 2 / 3;
     grid-row: 5 / 6;
+    color: #444;
 }
 
-.GridContactIconMail:hover{
+.GridContactIconMail:hover a{
     color: rgba(13,13,145,.8);
 }
 
-.GridContactIconLinkedin:hover{
+.GridContactIconLinkedin:hover a{
     color: rgba(13,13,145,.8);
 }
 
-.GridContactIconGithub:hover{
+.GridContactIconGithub:hover a{
     color: rgba(13,13,145,.8);
 }
 
-.GridContactIconFacebook:hover{
+.GridContactIconFacebook:hover a{
     color: rgba(13,13,145,.8);
 }
 
-.GridContactIconTwitter:hover{
+.GridContactIconTwitter:hover a{
     color: rgba(13,13,145,.8);
 }
 
-.ContactTagFont{
-    background-color: violet;
-}
-
-.ContactMeLinks{
-    background-color: tomato;
-}
