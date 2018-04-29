@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import ProfilePhoto from '../NavBar/Silavin.png';
 import 'semantic-ui-css/semantic.min.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 import './Home.css';
 
 class Home extends Component {
   render() {
     return (
       <div>
-
         <div className="BodyOfHome">
           <div className="GreetingBody">
             <p className="Greetings">Greetings, I'm Sebastian.</p>
@@ -35,14 +35,19 @@ class Home extends Component {
             <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-            <Nav className="NavTextAlign">
-                <Link to="/Skills" className="StyleNavBarButton">MY SKILLS</Link>    
-
-                <Link to='/Portfolio' className="StyleNavBarButton">PORTFOLIO</Link>
-
-                <Link to="/Contact" className="StyleNavBarButton">CONTACT</Link>
-
-                <Link to="/AboutMe" className="StyleNavBarButton">ABOUT ME</Link>
+            <Nav id="NavTextColorId">
+                <LinkContainer to="/Skills" className="StyleNavBarButton">
+                    <NavItem>MY SKILLS</NavItem>
+                </LinkContainer>
+                <LinkContainer to="/Portfolio" className="StyleNavBarButton">
+                    <NavItem>PORTFOLIO</NavItem>
+                </LinkContainer>
+                <LinkContainer to="/Contact" className="StyleNavBarButton"> 
+                    <NavItem>CONTACT</NavItem>
+                </LinkContainer>
+                <LinkContainer to="/AboutMe" className="StyleNavBarButton">
+                    <NavItem>ABOUT ME</NavItem>
+                </LinkContainer>
             </Nav>
         </Navbar.Collapse>
         </Navbar>
@@ -58,18 +63,18 @@ class Home extends Component {
                 <h2 className="IdentityRole">Web Developer</h2>
             </div>
                 <div className="DirectionalLinksSpacing">
-                    <Link to="/Skills" className="StyleNavBarButton">
+                    <NavLink to="/Skills" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className="DirectionalLinks">MY SKILLS</p>
-                    </Link>
-                    <Link to="/Portfolio" className="StyleNavBarButton">
+                    </NavLink>
+                    <NavLink to="/Portfolio" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className=" DirectionalLinks">PORTFOLIO</p>
-                    </Link>
-                    <Link to="/Contact" className="StyleNavBarButton">
+                    </NavLink>
+                    <NavLink to="/Contact" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className="DirectionalLinks">CONTACT</p>
-                    </Link>
-                    <Link to="/AboutMe" className="StyleNavBarButton">
+                    </NavLink>
+                    <NavLink to="/AboutMe" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                         <p className="DirectionalLinks">ABOUT ME</p>
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className="RightPanelFooter">                    
                     <p>GET IN TOUCH</p>    

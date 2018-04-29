@@ -19,7 +19,7 @@ class App extends Component {
         date: "Current",
         title: "I am busy until the start of 2019, but from then on, I will be looking for another interesting pursuit.",
         decription: "If you are looking for a front-end developer for a project, you can try contacting me. I will reply within 2 working days.",
-        button: ["REACT","REDUX", "JIA RONG"],
+        button: ["REACT","REDUX"],
       },
       {
         key: "2",
@@ -50,11 +50,6 @@ class App extends Component {
         type:"REDUX",
         url: "https://redux.js.org/"
       },
-      {
-        key: '3',
-        type: "JIA RONG",
-        url: "https://github.com/juniarz"
-      }
     ]
 
     var NoMatch = ( { location } ) => (

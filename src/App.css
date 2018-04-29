@@ -15,47 +15,64 @@
 }
 
 /* For Navigation Bar Text */
-@media (max-width:767px){
-.StyleNavBarButton{
-    color: rgb(210, 210, 210);
-    display: block;
-    font-size: 14px;
-    padding: 7px;
-}
-}
-
-@media (min-width:768px) and (max-width:1023px){
-    .StyleNavBarButton{
-        color: rgb(210, 210, 210);
-        display: inline-block;
-        font-size: 15px;
-        padding: 15px 0px 12px 14px;
-
-    }
-
-    .NavTextAlign{
-        float: none;
-        text-align: right;
-    }
-}
-
-@media (min-width:1024px){
-    .StyleNavBarButton{
-        color: rgb(210, 210, 210);
-
-    }
-}
-
-.StyleNavBarButton:hover{
+#NavTextColorId .StyleNavBarButton:hover a{
     color: whitesmoke;
 
 }
 
-.ActiveStyleNavBarButton{
+.ActiveStyleNavBarButton a{
     color:white !important;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue !important;
     text-decoration: none !important;
 }
+
+.ActiveStyleNavBarButton {
+    color:white !important;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue !important;
+    text-decoration: none !important;
+}
+
+@media (max-width:767px){
+    #NavTextColorId .StyleNavBarButton a{
+        color: rgb(210, 210, 210);
+        display: block;
+        font-size: 14px;
+        padding: 7px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    #NavTextColorId .StyleNavBarButton a{
+        color: rgb(210, 210, 210);
+        display: inline-block;
+        font-size: 15px;
+
+    }
+
+}
+
+@media (min-width:1025px){
+    #NavTextColorId .StyleNavBarButton a{
+        color: rgb(210, 210, 210);
+
+    }
+
+    .StyleNavBarButton{
+        color: rgb(210, 210, 210);
+
+    }
+
+    .StyleNavBarButton:active{
+        color: whitesmoke;
+
+    }
+
+    .StyleNavBarButton:hover{
+        color: whitesmoke;
+
+    }
+}
+
 
 /* For Navigation Bar Icons */
 .ClickableLinks{
@@ -67,7 +84,8 @@
 }
 
 /* For the content bodies in relations to the width of viewing screen*/
-@media (max-width: 1023px){
+@media (max-width: 1024px){
+
     .BodyContent{
         /* A style implemented for all body content components */
         background-color: white;
@@ -90,7 +108,7 @@
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
     
     .BodyContent{
         /* A style implemented for all body content components */
@@ -125,11 +143,5 @@
         background-color:white;
         z-index: -1;
     }
-}
-
-.Testsub{
-    height: 100%;
-    width: 100%;
-    background-color:red;
 }
 

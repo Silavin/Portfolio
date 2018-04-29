@@ -13,10 +13,6 @@
     filter: grayscale(1);
 }
 
-.ActiveStyleNavBarButton{
-    color:red;
-}
-
 .NarBarStyle{
     background-color: rgba(13,13,145,.8);
     color: whitesmoke;
@@ -94,7 +90,7 @@
 
 }
 
-@media (min-width:768px) and (max-width:1023px){
+@media (min-width:768px) and (max-width:1024px){
     
     .NarBarStyle{
         background-color: rgba(13,13,145,.8);
@@ -146,7 +142,7 @@
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
     .NarBarStyle{
         display: none;
     }

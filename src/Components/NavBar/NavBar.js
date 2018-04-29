@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './NavBar.css';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 import ProfilePhoto from './Silavin.png';
 import { Link, NavLink } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 
 class NavBar extends Component {
   render() {
@@ -40,16 +41,19 @@ class NavBar extends Component {
             <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-            <Nav className="NavTextAlign">
-
-                <NavLink to="/Skills" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">MY SKILLS</NavLink>
-
-                <NavLink to="/Portfolio" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">PORTFOLIO</NavLink>
-
-                <NavLink to="/Contact" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">CONTACT</NavLink>
-            
-                <NavLink to="/AboutMe" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">ABOUT ME</NavLink>
-
+            <Nav id="NavTextColorId">
+            <LinkContainer to="/Skills" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
+                <NavItem>MY SKILLS</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/Portfolio" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
+                <NavItem>PORTFOLIO</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/Contact" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton"> 
+                <NavItem>CONTACT</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/AboutMe" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
+                <NavItem>ABOUT ME</NavItem>
+            </LinkContainer>
             </Nav>
         </Navbar.Collapse>
         </Navbar>
