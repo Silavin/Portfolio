@@ -2,26 +2,28 @@ import React, { Component } from 'react';
 import NavBar from '../NavBar';
 import './PortfolioContent.css';
 
+
 class PortfolioContent extends Component {
 
   constructor(props) {
     super(props);
 
-    this.buttons = this.generateButton();
+    // this.buttons = this.generateButton();
+    this.buttons = this.generateButton()
   }
   
   generateButton = () => {
-    var results = [];
+    return(
     this.props.data.button.map((button) => {
+      return(
       this.props.dataLinks.map((link) => {
         if (button === link.type) {
-          results.push(<button className="TechListButtonStyle2">{link.type} - {link.url}</button>);
+        return (<a href={link.url}><button className="TechListButtonStyle2">{link.type}</button></a>);
         }
-      });
-    });
+      })
+    );})
+  );}
 
-    return results;
-  }
 
   render() {
 

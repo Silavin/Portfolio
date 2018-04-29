@@ -46,7 +46,7 @@
 
 }
 
-@media (min-width:768px) and (max-width:1023px){
+@media (min-width:768px) and (max-width:1024px){
     
     
     .GreetingBody{
@@ -82,7 +82,7 @@
 
 }
 
-@media (min-width:1024px){
+@media (min-width:1025px){
     
     .GreetingBody{
         margin: 8% 8% 0em 10%;

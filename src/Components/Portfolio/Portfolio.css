@@ -67,7 +67,7 @@
     }
 }
 
-@media (min-width:768px) and (max-width:1023px){
+@media (min-width:768px) and (max-width:1024px){
 
     #TimeLineForSmallWidth{
         display: none;
@@ -107,7 +107,7 @@
     }
 }
 
-@media (min-width: 1024px ){
+@media (min-width: 1025px ){
     
     #TimeLineForSmallWidth{
         display: none;

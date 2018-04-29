@@ -41,7 +41,7 @@ class NavBar extends Component {
             <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-            <Nav id="NavTextAlign">
+            <Nav id="NavTextColorId">
             <LinkContainer to="/Skills" className="StyleNavBarButton" activeClassName="ActiveStyleNavBarButton">
                 <NavItem>MY SKILLS</NavItem>
             </LinkContainer>
