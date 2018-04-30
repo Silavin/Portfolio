@@ -11,6 +11,7 @@ class Portfolio extends Component {
         this.PostContent = this.PostContent();
       }
  
+    // * This is for big width devices.
       Timeline = () => {
           return(
             <Timeline>
@@ -45,6 +46,7 @@ class Portfolio extends Component {
         )
       }
 
+    //   The below is for small width devices.
       PostContent = () => {
           return (
             this.props.data.map(

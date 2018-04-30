@@ -10,7 +10,7 @@ import './App.css';
 // Photoimport
 import OriginPortfolio from './Photos/OriginPortfolio/MySecondPortfolio.JPG'
 //
-import FirstPortfolioCode from './Photos/First Portfolio/First Portfolio home codes.jpg';
+import FirstPortfolioCode from './Photos/First Portfolio/First Portfolio home codes.JPG';
 import FirstPortfolioRead from './Photos/First Portfolio/First Portfolio read more.JPG';
 import FirstPortfolioHome from './Photos/First Portfolio/First Portfolio home.JPG';
 //

@@ -20,7 +20,7 @@ class Home extends Component {
             <Link to="/Portfolio"><button className="ButtonStyle">My Skills</button></Link>
           </div>
         </div>
-        
+        {/*  */}
         <Navbar collapseOnSelect  className="NarBarStyle">
         <Navbar.Header>
             <Navbar.Brand>
@@ -52,7 +52,7 @@ class Home extends Component {
         </Navbar.Collapse>
         </Navbar>
 
-        {/* Panel After View Width Exceeds 1023px */}
+        {/* Panel After View Width Exceeds 1024px */}
 
         <div className="RightPanel">
             <div className="RightPanelProfile">
