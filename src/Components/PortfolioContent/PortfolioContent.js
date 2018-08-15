@@ -13,16 +13,17 @@ class PortfolioContent extends Component {
   }
   
   generateButton = () => {
-    return(
-    this.props.data.button.map((button) => {
-      return(
-      this.props.dataLinks.map((link) => {
-        if (button === link.type) {
-        return (<a href={link.url}><button className="TechListButtonStyle2">{link.type}</button></a>);
-        }
-      })
-    );})
-  );}
+    var results = [];
+    for (var button in this.props.data.button) {
+      for (var link in this.props.dataLinks) {
+          if (button === link.type) {
+             results.push(<a href={link.url}><button className="TechListButtonStyle2">{link.type}</button></a>);
+          }
+      }
+    }
+
+    return results;
+  }
 
   generatePhotos = () => {
     return(
